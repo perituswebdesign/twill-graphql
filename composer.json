@@ -18,7 +18,7 @@
     "require": {
         "php": "^8.0",
         "area17/twill": "2.8.4",
-        "illuminate/contracts": "^8.73",
+        "illuminate/contracts": "*",
         "mll-lab/graphql-php-scalars": "^5.4",
         "mll-lab/laravel-graphql-playground": "^2.5",
         "nuwave/lighthouse": "^5.39",
@@ -54,7 +54,11 @@
         "test-coverage": "vendor/bin/pest --coverage"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
     },
     "extra": {
         "laravel": {
